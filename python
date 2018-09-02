@@ -1,0 +1,49 @@
+>>> string1="Planet revolves around stars"
+>>> listofstring1=string1.split()
+>>> listofstring1
+['Planet', 'revolves', 'around', 'stars']
+>>> newstring1=','.join(listofstring1)
+>>> newstring1
+'Planet,revolves,around,stars'
+>>> string2="Satellites revolve around planets"
+>>> listofstring2=string2.split()
+>>> listofstring2
+['Satellites', 'revolve', 'around', 'planets']
+>>> newstring2=','.join(listofstring2)
+>>> newstring2
+'Satellites,revolve,around,planets'
+>>> string3="Sun is a star"
+>>> listofstring3=string3.split()
+>>> listofstring3
+['Sun', 'is', 'a', 'star']
+>>> newstring3=','.join(listofstring3)
+>>> newstring3
+'Sun,is,a,star'
+>>> string4="Earth revolves around sun"
+>>> listofstring4=string4.split()
+>>> listofstring4
+['Earth', 'revolves', 'around', 'sun']
+>>> newstring4=','.join(listofstring4)
+>>> newstring4
+'Earth,revolves,around,sun'
+>>> string5="Moon revolves around earth"
+>>> listofstring5=string5.split()
+>>> listofstring5
+['Moon', 'revolves', 'around', 'earth']
+>>> newstring5=','.join(listofstring5)
+>>> newstring5
+'Moon,revolves,around,earth'
+>>> print(newstring5[0:5],newstring3[4:6],newstring3[7:9],newstring2[0:9])
+Moon, is a, Satellite
+>>> print(newstring4[0:6],newstring3[4:6],newstring3[7:9],newstring1[0:6])
+Earth, is a, Planet
+>>> print(newstring3[0:4],newstring3[4:6],newstring3[7:9],newstring3[9:13])
+Sun, is a, star
+>>> print(newstring1[0:7],newstring4[6:14],newstring4[15:21],newstring3[8:13])
+Planet, revolves around ,star
+>>> print(newstring2[0:9],newstring4[5:14],newstring4[15:22],newstring1[0:6])
+Satellite ,revolves around, Planet
+>>> print(newstring5[0:4],newstring4[5:14],newstring4[15:22],newstring4[0:5])
+Moon ,revolves around, Earth
+>>> print(newstring4[0:5],newstring4[5:14],newstring4[15:22],newstring3[0:3])
+Earth ,revolves around, Sun
